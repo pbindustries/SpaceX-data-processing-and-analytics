@@ -1,0 +1,5 @@
+#!/bin/bash
+
+URL="https://api.spacexdata.com/v3/launches"
+wget "$URL" -O - | jq '.' >> ~/pbindustries/public/My-projects/space-x-analytics/data/v3LaunchOutput.json
+
